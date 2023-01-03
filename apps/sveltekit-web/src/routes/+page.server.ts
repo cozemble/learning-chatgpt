@@ -1,7 +1,6 @@
 import type { RequestEvent } from "@sveltejs/kit";
 import { Configuration, OpenAIApi } from "openai";
 const configuration = new Configuration({
-  organization: "org-HxwskUQppDZdQp0pwyHsbiVw",
   apiKey: process.env.OPEN_AI_API_KEY,
 });
 const openai = new OpenAIApi(configuration);
